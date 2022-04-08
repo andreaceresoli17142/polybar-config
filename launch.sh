@@ -4,7 +4,7 @@ cd $HOME/.config/polybar
 
 isLocked=`cat .lock`
 
-echo $isLocked >> .deb
+# echo $isLocked >> .deb
 
 if [ $isLocked == "0" ];
 then

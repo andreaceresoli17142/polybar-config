@@ -47,7 +47,7 @@ warning = #ffb52a
 [bar/stdBar]
 monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 26
+height = 33
 ;offset-x = 1%
 ;offset-y = 1%
 fixed-center = true
@@ -64,11 +64,8 @@ padding-right = 1
 module-margin-left = 1
 module-margin-right = 1
 
-;font-0 = Fira Code:style=regular:pixelsize=10;0
-;font-1 = Mono:pixelsize=30:weight=regular;1
-font-1 =  Noto Color Emoji:style=Regular:scale=10;1
-
-font-0 = FiraCode Nerd Font:pixelsize=10;1
+font-0 = JetBrainsMono Nerd Font:style=regular:pixelsize=17;0
+font-1 =  Noto Color Emoji:style=Regular:scale=7;1
 
 modules-left = i3
 modules-center = spotify
@@ -79,7 +76,7 @@ tray-padding = 2
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+wm-restack = i3
 
 ;override-redirect = true
 
@@ -209,9 +206,9 @@ bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
-bar-volume-fill = ─
+bar-volume-fill = -
 bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-empty = - 
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
