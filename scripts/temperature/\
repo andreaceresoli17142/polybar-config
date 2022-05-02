@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tmp=echo sensors | awk '{/^temp1/ {print $2}} substr ( $0, 2 )'
+
+# echo ${tmp:1}
+echo $tmp

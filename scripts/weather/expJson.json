@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 10.2147, 
+        "lat": 45.5356
+    }, 
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations", 
+    "main": {
+        "temp": 8.7, 
+        "feels_like": 7.23, 
+        "temp_min": 6.32, 
+        "temp_max": 11.51, 
+        "pressure": 1014, 
+        "humidity": 79
+    }, 
+    "visibility": 10000, 
+    "wind": {
+        "speed": 2.57, 
+        "deg": 220
+    }, 
+    "clouds": {
+        "all": 83
+    }, 
+    "dt": 1645008920, 
+    "sys": {
+        "type": 2, 
+        "id": 197942, 
+        "country": "IT", 
+        "sunrise": 1644992399, 
+        "sunset": 1645030004
+    }, 
+    "timezone": 3600, 
+    "id": 3181554, 
+    "name": "Brescia", 
+    "cod": 200
+}
