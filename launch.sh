@@ -22,7 +22,8 @@ then
 	echo "1" > .lock
 
 	# Terminate already running bar instances
-	killall -q polybar
+	killall -q -SIGKILL polybar
+	# kill -SIGKILL $(pgrep -x polybar)
 
 	# Wait until the processes have been shut down
 	while pgrep -x polybar >/dev/null; do sleep 1; done
