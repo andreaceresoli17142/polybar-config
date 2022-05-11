@@ -82,6 +82,7 @@ func main() {
 
 	if err != nil {
 		fmt.Printf("Error: %s", err.Error())
+		fmt.Println("req limit exceded")
 		return
 	}
 
