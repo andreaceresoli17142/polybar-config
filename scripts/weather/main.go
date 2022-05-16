@@ -71,7 +71,8 @@ func main() {
 	req, err := http.NewRequest("GET", url, nil)
 
 	if err != nil {
-		fmt.Printf("Error: %s", err.Error())
+		// fmt.Printf("Error: %s", err.Error())
+		fmt.Println("requests number exceeded")
 		return
 	}
 

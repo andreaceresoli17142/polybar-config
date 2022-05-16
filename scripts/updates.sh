@@ -15,7 +15,7 @@ while true; do
         elif (( UPDATES > 25 )); then
             notify-send -u normal -i $NOTIFY_ICON \
                 "You should update soon" "$UPDATES New packages"
-        elif (( UPDATES > 2 )); then
+        elif (( UPDATES > 0 )); then
             notify-send -u low -i $NOTIFY_ICON \
                 "$UPDATES New packages"
         fi
@@ -25,11 +25,11 @@ while true; do
     # every 10 seconds another check for updates is done
     while (( UPDATES > 0 )); do
         if (( UPDATES == 1 )); then
-            echo " $UPDATES"
+            echo " $UPDATES"
         elif (( UPDATES > 1 )); then
-            echo " $UPDATES"
+            echo " $UPDATES"
         else
-            echo " None"
+            echo ""
         fi
         sleep 10
         get_total_updates
@@ -38,7 +38,7 @@ while true; do
     # when no updates are available, use a longer loop, this saves on CPU
     # and network uptime, only checking once every 30 min for new updates
     while (( UPDATES == 0 )); do
-        echo " None"
+        echo ""
         sleep 1800
         get_total_updates
     done
