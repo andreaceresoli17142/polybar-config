@@ -10,8 +10,12 @@ elif [ "$splitted" -lt "64" ]; then
 	echo -n "%{F#cccc00}"
 elif [ "$splitted" -lt "80" ]; then
 	echo -n "%{F#cc6600}"
-else 
-	notify-send "computer is overheated"
+else
+	 
+	if [ "$splitted" -gt "95" ]; then
+		notify-send "computer is overheated"
+	fi
+
 	echo -n "%{F#cc0000}"
 fi
 
