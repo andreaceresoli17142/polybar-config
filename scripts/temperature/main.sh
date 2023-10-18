@@ -1,5 +1,5 @@
 #!/bin/bash
-tmp=`sensors | awk '/^Package id 0:/ { print substr ( $4, 2 ) }' | egrep -o '[0-9]+.[0-9]+'`
+tmp=`sensors | awk '/^Package id 0:/ { print substr ( $4, 2 ) }' | grep -E '[0-9]+.[0-9]+'`
 readarray -d . -t splitted<<< "$tmp"
 
 if [ "$splitted" -lt "32" ];then
